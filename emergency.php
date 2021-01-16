@@ -136,7 +136,7 @@ include 'layout/_top_nav.php';
 				
                         </tr>
 			<? 
-			$phone= $d['mobile'];
+			$phone= 6$d['mobile'];
 			$data = [
     			'phone' => $phone, // Receivers phone
     			'body' => 'Hello, Andrew!', // Message
