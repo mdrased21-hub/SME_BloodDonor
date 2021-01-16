@@ -6,7 +6,7 @@
             <table class="table table-condensed">
                 <thead>
                 <th>Name</th>
-                <th></th>
+                <th>email</th>
                 <th>D.O.B</th>
                 <th>Gender</th>
                 <th>Blood Group</th>
