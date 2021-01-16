@@ -6,7 +6,7 @@
             <table class="table table-condensed">
                 <thead>
                 <th>Name</th>
-                <th>Email</th>
+                
                 <th>D.O.B</th>
                 <th>Gender</th>
                 <th>Blood Group</th>
@@ -17,7 +17,7 @@
                 <?php foreach($users as $u): $i++;?>
                 <tr class="<?php if($i%2==0){echo $bg_background;}else{echo 'bg-danger';} ?>">
                     <td><?= $u['first_name']." ".$u['last_name']; ?></td>
-                    <td><?= $u['email']; ?></td>
+                    
                     <td><?= $u['dob']; ?></td>
                     <td><?= $u['gender']; ?></td>
                     <td><?= $u['b_type']; ?></td>
