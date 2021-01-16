@@ -139,7 +139,7 @@ include 'layout/_top_nav.php';
 			
 			
 			$data = [
-    			'phone' => '6 $d['mobile']', // Receivers phone
+    			'phone' => 6$d['mobile'], // Receivers phone
     			'body' => 'Hello, Andrew!', // Message
 			];
 			$json = json_encode($data); // Encode data to JSON
