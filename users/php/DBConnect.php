@@ -34,9 +34,9 @@ class DBConnect {
         $stmt->execute(["%".$bloodType."%"]);
         return $stmt->fetchAll();
     }
-    public function registerUser($firstName,$lastName,$email,$dob,$gender,$b_type,$address,$city,$mobile){
-        $stmt = $this->db->prepare("INSERT INTO users (first_name,last_name,email,dob,gender,b_type,address,city,mobile) VALUES (?,?,?,?,?,?,?,?,?)");
-        $stmt->execute([$firstName,$lastName,$email,$dob,$gender,$b_type,$address,$city,$mobile]);
+    public function registerUser($firstName,$lastName,$dob,$gender,$b_type,$address,$city,$mobile){
+        $stmt = $this->db->prepare("INSERT INTO donors (fname,lname,bday,sex,b_type,h_address,city,mobile) VALUES (?,?,?,?,?,?,?,?)");
+        $stmt->execute([$firstName,$lastName,$dob,$gender,$b_type,$address,$city,$mobile]);
         return true;
     }
     public function getUsers(){
