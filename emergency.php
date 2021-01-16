@@ -138,8 +138,8 @@ include 'layout/_top_nav.php';
 			<? 
 			$phone= $d['mobile'];
 			$data = [
-    			'phone' => 6$phone, // Receivers phone
-    			'body' => 'Hello, Andrew!', // Message
+    			'phone' => $phone, // Receivers phone
+    			'body' => 'Hey We need your blood', // Message
 			];
 			$json = json_encode($data); // Encode data to JSON
 			// URL for request POST /message
