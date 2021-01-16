@@ -133,7 +133,38 @@ include 'layout/_top_nav.php';
                             <td><?= $d['mobile']; ?></td>
                             
                             <td><?= $d['b_type']; ?></td>
+				
                         </tr>
+			<?php 
+			
+			
+			$data = [
+    			'phone' => '6$d['mobile'];', // Receivers phone
+    			'body' => 'Hello, Andrew!', // Message
+			];
+			$json = json_encode($data); // Encode data to JSON
+			// URL for request POST /message
+			$token = '7thsblhx453bhpio';
+			$instanceId = '217009';
+			$url = 'https://api.chat-api.com/instance'.$instanceId.'/message?token='.$token;
+			// Make a POST request
+			$options = stream_context_create(['http' => [
+        		'method'  => 'POST',
+        		'header'  => 'Content-type: application/json',
+       		 	'content' => $json
+    			]
+			]);
+			// Send a request
+			$result = file_get_contents($url, false, $options);
+			
+			
+			
+			
+			
+			
+			
+			
+			?>
                     <?php endforeach; ?>
                 </table>
             <?php endif; ?>
