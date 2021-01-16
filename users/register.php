@@ -2,7 +2,7 @@
 if (isset($_POST['submitBtn'])) {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
+    //$email = $_POST['email'];
     $dob = $_POST['dob'];
     $gender = $_POST['gender'];
     $address = $_POST['address'];
@@ -12,7 +12,7 @@ if (isset($_POST['submitBtn'])) {
     
     require_once 'php/DBConnect.php';
     $db = new DBConnect();
-    $flag = $db->registerUser($firstName, $lastName, $email, $dob, $gender, $bType, $address, $city, $mobile);
+    $flag = $db->registerUser($firstName, $lastName, $dob, $gender, $bType, $address, $city, $mobile);
     
     if($flag){
         $success = "Thank You for registering with us.";
@@ -57,12 +57,7 @@ include 'layout/navbar.php';
                             <input type="text" name="lastName" class="form-control" placeholder="Last Name" required="true">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label col-md-4">Email</label>
-                        <div class="col-md-8">
-                            <input type="email" required="true" class="form-control" name="email" >
-                        </div>
-                    </div>
+                    
                     <div class="form-group">
                         <label class="form-label col-md-4">D.O.B</label>
                         <div class="col-md-8">
@@ -99,11 +94,26 @@ include 'layout/navbar.php';
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label col-md-4">City</label>
-                        <div class="col-md-8">
-                            <input type="text" required="true" class="form-control" name="city" >
+                            <label class="col-sm-4">State:</label>
+                            <div class="col-sm-8">
+                                <select name="city" class="form-control">
+                                    <option value="Selangor">Selangor</option>
+                                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                    <option value="Putrajaya">Putrajaya</option>
+                                    <option value="Melaka">Melaka</option>
+                                    <option value="Johor">Johor</option>
+                                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                    <option value="Pahang">Pahang</option>
+                                    <option value="Terengganu">Terengganu</option>
+									<option value="Kelantan">Kelantan</option>
+									<option value="Perlis">Perlis</option>
+									<option value="Kedah">Kedah</option>
+									<option value="Penang">Penang</option>
+									<option value="Sabah">Sabah</option>
+									<option value="Sarawak">Sarawak</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
                     <div class="form-group">
                         <label class="form-label col-md-4">Mobile</label>
                         <div class="col-md-8">
