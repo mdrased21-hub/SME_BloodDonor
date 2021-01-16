@@ -120,12 +120,7 @@ include 'layout/_top_nav.php';
                                 <input type="number" min="0" max="10000000000" name="mobile" class="form-control" required="true">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-4">Phone</label>
-                            <div class="col-sm-8">
-                                <input type="number" min="0" max="10000000000" name="phone" class="form-control">
-                            </div>
-                        </div>           
+                                 
                     </div>
                     <div class="panel-heading">
                         <h5>Donor Medical Info</h5>
