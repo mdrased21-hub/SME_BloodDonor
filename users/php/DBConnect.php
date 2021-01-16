@@ -40,7 +40,7 @@ class DBConnect {
         return true;
     }
     public function getUsers(){
-        $stmt = $this->db->prepare("SELECT * FROM users");
+        $stmt = $this->db->prepare("SELECT * FROM donors");
         $stmt->execute();
         return $stmt->fetchAll();
     }
