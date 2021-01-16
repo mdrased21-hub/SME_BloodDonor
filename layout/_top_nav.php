@@ -26,6 +26,13 @@
                             echo '';
                         }
                         ?>"><a href="donor.php">New Donor</a></li>
+		  	<li class="<?php
+                        if (isset($setEmergencyActive)) {
+                            echo $setEmergencyActive;
+                        } else {
+                            echo '';
+                        }
+                        ?>"><a href="emergency.php">EMERGENCY</a></li>
                         
                         <li class="<?php if(isset($setMemberActive)) { echo $setMemberActive; } else { echo ''; } ?>">
                             <a href="members.php">Our Members</a>
