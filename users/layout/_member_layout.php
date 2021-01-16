@@ -6,7 +6,7 @@
             <table class="table table-condensed">
                 <thead>
                 <th>Name</th>
-                <th>email</th>
+                
                 <th>D.O.B</th>
                 <th>Gender</th>
                 <th>Blood Group</th>
@@ -16,12 +16,12 @@
                 </thead>
                 <?php foreach($users as $u): $i++;?>
                 <tr class="<?php if($i%2==0){echo $bg_background;}else{echo 'bg-danger';} ?>">
-                    <td><?= $u['first_name']." ".$u['last_name']; ?></td>
-                    <td></td>
-                    <td><?= $u['dob']; ?></td>
-                    <td><?= $u['gender']; ?></td>
+                    <td><?= $u['fname']." ".$u['lname']; ?></td>
+                    
+                    <td><?= $u['bday']; ?></td>
+                    <td><?= $u['sex']; ?></td>
                     <td><?= $u['b_type']; ?></td>
-                    <td><?= wordwrap($u['address'], 26, '<br>'); ?></td>
+                    <td><?= wordwrap($u['h_address'], 26, '<br>'); ?></td>
                     <td><?= $u['city']; ?></td>
                     <td><?= $u['mobile']; ?></td>
                 </tr>
