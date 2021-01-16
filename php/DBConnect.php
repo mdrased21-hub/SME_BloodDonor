@@ -51,7 +51,12 @@ class DBConnect {
         }
     }
 
-
+    public function searchDonorWithBloodGroupANDState($bloodGroup,$state){
+        $stmt = $this->db->prepare("SELECT * FROM donors WHERE b_type LIKE ? AND city LIKE ?");
+        $stmt->execute([$bloodGroup,$state]);
+        return $stmt->fetchAll();
+    }
+    
     public function login($username, $password){
         $stmt = $this->db->prepare("SELECT * FROM employees WHERE username=? AND password=?");
         $stmt->execute([$username,$password]);
