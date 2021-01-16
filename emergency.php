@@ -98,7 +98,7 @@ include 'layout/_top_nav.php';
             <!-- If the donor is searched by a particular blood group -->
             <?php if(isset($_POST['contact'])): ?>
                 <?php if(isset($donors[0])): ?>
-                    <label>Total Blood Donor Available for <?= $donors[0]['b_type']; ?>:</label> <span class="emphasize"><?= count($donors); ?> Person</span>
+                    <label>Total Blood Donor Contacted for <?= $donors[0]['b_type']; ?>:</label> <span class="emphasize"><?= count($donors); ?> Person</span>
                 <?php endif; ?>
             <?php endif; ?>
             
