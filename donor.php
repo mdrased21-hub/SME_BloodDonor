@@ -109,9 +109,24 @@ include 'layout/_top_nav.php';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4">City</label>
+                            <label class="col-sm-4">State:</label>
                             <div class="col-sm-8">
-                                <input type="text" name="city" class="form-control" required="true">
+                                <select name="city" class="form-control">
+                                    <option value="Selangor">Selangor</option>
+                                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                    <option value="Putrajaya">Putrajaya</option>
+                                    <option value="Melaka">Melaka</option>
+                                    <option value="Johor">Johor</option>
+                                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                    <option value="Pahang">Pahang</option>
+                                    <option value="Terengganu">Terengganu</option>
+									<option value="Kelantan">Kelantan</option>
+									<option value="Perlis">Perlis</option>
+									<option value="Kedah">Kedah</option>
+									<option value="Penang">Penang</option>
+									<option value="Sabah">Sabah</option>
+									<option value="Sarawak">Sarawak</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
