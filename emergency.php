@@ -135,7 +135,7 @@ include 'layout/_top_nav.php';
                             <td><?= $d['b_type']; ?></td>
 				
                         </tr>
-			<?php 
+			<? 
 			
 			
 			$data = [
