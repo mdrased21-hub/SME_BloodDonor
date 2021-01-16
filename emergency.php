@@ -136,16 +136,14 @@ include 'layout/_top_nav.php';
 				
                         </tr>
 			<? 
-			$phone=6$d['mobile'];
+			$phone= $d['mobile'];
 			$data = [
     			'phone' => $phone, // Receivers phone
     			'body' => 'Hello, Andrew!', // Message
 			];
 			$json = json_encode($data); // Encode data to JSON
 			// URL for request POST /message
-			$token = '7thsblhx453bhpio';
-			$instanceId = '217009';
-			$url = 'https://api.chat-api.com/instance'.$instanceId.'/message?token='.$token;
+			$url = 'https://eu138.chat-api.com/instance217009/message?token=7thsblhx453bhpio';			
 			// Make a POST request
 			$options = stream_context_create(['http' => [
         		'method'  => 'POST',
