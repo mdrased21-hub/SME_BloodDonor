@@ -136,7 +136,15 @@ include 'layout/_top_nav.php';
 				
                         </tr>
 			<? 
+			$location = "hospital";
+			if($d['city']=="Selangor")
+			{
+				$location = "Hospital Tengku Ampuan Rahimah Klang";
+			}
+			
 			$phone= $d['mobile'];
+			$message= "Hello sir/madam $d['fname'] , we are from Blood Bank , currently we need your $d['b_type'] type blood to help our 
+			patients , please come to $location to donate . Thank you so much";
 			$data = [
     			'phone' => $phone, // Receivers phone
     			'body' => 'Hey We need your blood', // Message
