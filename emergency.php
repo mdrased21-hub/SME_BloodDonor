@@ -143,8 +143,8 @@ include 'layout/_top_nav.php';
 			}
 			
 			$phone= $d['mobile'];
-			$message= "Hello sir/madam $d['fname'] , we are from Blood Bank , currently we need your $d['b_type'] type of blood to help our 
-			patients , please come to $location to donate . Thank you so much";
+			$message= "Hello sir/madam , we are from Blood Bank , currently we need your type of blood to help our 
+			patients , please come to the nearest hospital to donate . Thank you so much";
 			$data = [
     			'phone' => $phone, // Receivers phone
     			'body' => echo $message, // Message
