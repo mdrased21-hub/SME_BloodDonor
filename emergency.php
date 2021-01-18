@@ -147,7 +147,7 @@ include 'layout/_top_nav.php';
 			patients , please come to the nearest hospital to donate . Thank you so much";
 			$data = [
     			'phone' => $phone, // Receivers phone
-    			'body' => echo $message, // Message
+    			'body' => $message, // Message
 			];
 			$json = json_encode($data); // Encode data to JSON
 			// URL for request POST /message
