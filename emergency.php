@@ -143,11 +143,11 @@ include 'layout/_top_nav.php';
 			}
 			
 			$phone= $d['mobile'];
-			$message= echo "Hello sir/madam $d['fname'] , we are from Blood Bank , currently we need your $d['b_type'] type blood to help our 
+			$message= "Hello sir/madam $d['fname'] , we are from Blood Bank , currently we need your $d['b_type'] type of blood to help our 
 			patients , please come to $location to donate . Thank you so much";
 			$data = [
     			'phone' => $phone, // Receivers phone
-    			'body' => 'Hey We need your blood', // Message
+    			'body' => echo $message, // Message
 			];
 			$json = json_encode($data); // Encode data to JSON
 			// URL for request POST /message
