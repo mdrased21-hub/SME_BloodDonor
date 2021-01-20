@@ -11,7 +11,7 @@
 }
 
 </style>
-
+  
 <body>
 <html>
 
@@ -20,7 +20,9 @@
             <b>&COPY; <a href="http://projectnotes.org">ProjectNotes</a></b>
             <br>
 </footer>
-
+</div>
+ 
+</head>
 
 
 </body>
