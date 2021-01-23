@@ -132,6 +132,9 @@ a {
             <p id="About">
                 Blood Bank Management System (BBMS) is a browser based system that is designed to store, process, retrieve and analyze information concerned with the administrative and inventory management within a blood bank. This project aims at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way. Aim is to provide transparency in this field, make the process of obtaining blood from a blood bank hassle free and corruption free and make the system of blood bank management effective.
             </p>
+            <div>
+            <img src="assets/bloodbank.jpg" alt="Snow" style="width:70%;">
+            </div>
             <hr id="line_1">
 
         
@@ -176,7 +179,7 @@ a {
 
 
 
-           <h1>FEATURES</h1>
+           <h1>OUR FEATURES</h1>
 
             <p>
             <ul class="a">
@@ -188,14 +191,13 @@ a {
                <li>Discarding of expired and unsuitable blood (Less Qty., Reactive, Clotting, Hemolysis).</li><br>
                <li>Being a web based system, can be implemented throughout the state. - - Separate user accounts can be created for each blood bank.</li><br>
                <li>Patient Register/Blood Sample Receiving Register, Donor Register, Blood Issue Register and Discarded Blood report.</li><br>
-               <li>Fridge Wise Stock Position and Printing of Fridge Stickers.</li><br>
                <li>List of Donors who are eligible for donation on a particular date with contact Number.</li><br>
                
             </p>
         </div>
         <div class="col-md-2">
             <img src="../assets/donate_blood_right.jpg" class="img img-responsive img-thumbnail" style="width:200px ;">
-             <img src="assets/blood.jpg" class="img img-responsive img-thumbnail">
+             <img src="assets/blood.jpg" class="img img-responsive img-thumbnail" style="width:200px ;">
         </div>
 
 
