@@ -15,7 +15,7 @@ class DBConnect {
 
     const DB_SERVER = "sql108.epizy.com";
     const DB_USER = "epiz_27764860";
-    const DB_PASSWORD = "SMEsyah1997";
+    const DB_PASSWORD = "c8pjmvdk";
     const DB_NAME = "epiz_27764860_bloodonation";
 
     public function __construct() {
