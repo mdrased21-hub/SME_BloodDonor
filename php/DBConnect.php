@@ -13,10 +13,10 @@
 class DBConnect {
     private $db = NULL;
 
-    const DB_SERVER = "sql12.freesqldatabase.com";
-    const DB_USER = "sql12386523";
-    const DB_PASSWORD = "L5ImQtWCGa";
-    const DB_NAME = "sql12386523";
+    const DB_SERVER = "sql108.epizy.com";
+    const DB_USER = "epiz_27764860";
+    const DB_PASSWORD = "SMEsyah1997";
+    const DB_NAME = "epiz_27764860_bloodonation";
 
     public function __construct() {
         $dsn = 'mysql:dbname=' . self::DB_NAME . ';host=' . self::DB_SERVER;
