@@ -249,7 +249,7 @@ body{
           
 
           <div>
-            <img src = "image/contact-png.png" alt = "">
+            <img src = "image/contact-png.png" alt = "hey">
           </div>
         </div>
   
