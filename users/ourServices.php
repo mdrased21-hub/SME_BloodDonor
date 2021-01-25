@@ -17,7 +17,7 @@ body{
 }
 
 .header {
-	height: 20vh;
+    height: 20vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(image/contact-bg.jpg);
     background-position: 50% 100%;
     background-repeat: no-repeat;
